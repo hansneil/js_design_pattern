@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design Pattern Demo</title>
+</head>
+<body>
+<a id="myhref" href="https://www.baidu.com">My Link</a>
+<script src="js/facade.js"></script>
+<script>
+    var d = document.getElementById('myhref');
+    console.log('aaa' + d);
+    addEvent(d, 'click', function(){
+        alert('hhh');
+        event.preventDefault();
+    })
+</script>
+</body>
+</html>
